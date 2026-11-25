@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayesh Mulchandani — Network Engineer · Data & Automation</title>
+<meta name="description" content="Portfolio of Jayesh Mulchandani — Network Engineer at Ericsson with expertise in RAN performance monitoring, 4G/5G KPIs, Python automation and reporting.">
+<meta name="theme-color" content="#0a1220">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<canvas id="net" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="Home"><span>J</span>M<i></i></a>
+  <nav class="links" id="links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#learning">Education</a>
+    <a href="#contact" class="pill">Let's talk</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="icon-btn burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="dot"></span> Open to new opportunities · Open to relocate</p>
+      <h1 class="reveal d1">Hi, I'm <span class="grad">Jayesh<br>Mulchandani</span></h1>
+      <p class="role reveal d2"><span id="typed"></span><span class="caret"></span></p>
+      <p class="lead reveal d3">Network Engineer at Ericsson with <strong>2 years 11 months</strong> of hands-on experience turning raw radio-network data into clear reports, automated workflows and reliable change management.</p>
+      <div class="cta reveal d4">
+        <a href="#projects" class="btn primary magnetic"><span>View my work</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="assets/Jayesh_Mulchandani_CV.pdf" download class="btn ghost magnetic"><span>Download CV</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal d2">
+      <div class="photo-card" id="tilt">
+        <div class="ring"></div>
+        <img src="assets/jayesh.jpg" alt="Portrait of Jayesh Mulchandani" width="720" height="720">
+        <div class="chip c1"><b>Python</b><small>Pandas · OpenPyXL</small></div>
+        <div class="chip c2"><b>4G / 5G</b><small>RAN KPIs</small></div>
+        <div class="chip c3"><b>Excel</b><small>Report automation</small></div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>RAN Performance</span><span>•</span><span>Python Automation</span><span>•</span><span>5G NR</span><span>•</span><span>KPI Analysis</span><span>•</span><span>Change Management</span><span>•</span><span>Excel Automation</span><span>•</span><span>Shell Scripting</span><span>•</span>
+    <span>RAN Performance</span><span>•</span><span>Python Automation</span><span>•</span><span>5G NR</span><span>•</span><span>KPI Analysis</span><span>•</span><span>Change Management</span><span>•</span><span>Excel Automation</span><span>•</span><span>Shell Scripting</span><span>•</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">01</span><h2>About me</h2></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I specialise in <strong>network performance monitoring, data analysis and report automation</strong>. My day-to-day involves identifying configuration issues, producing technical reports and managing Change Requests (CRQs) through ITSM tooling.</p>
+        <p>I'm proficient in <strong>Python, Pandas, Excel automation and Shell/CLI</strong>, backed by solid networking fundamentals — TCP/IP, OSI, IP addressing &amp; subnetting, DNS, DHCP, VLAN, routing and switching.</p>
+        <p>Next, I'm looking to grow my skills across IT Networking, Network Operations, Monitoring and Automation.</p>
+      </div>
+      <div class="stats reveal d1">
+        <div class="stat"><span class="n" data-count="2" data-suffix="y">0</span><span class="n sm" data-count="11" data-suffix="m">0</span><p>Experience at Ericsson</p></div>
+        <div class="stat"><span class="n" data-count="3">0</span><p>ENM environments monitored</p></div>
+        <div class="stat"><span class="n" data-count="20" data-prefix="Top ">0</span><p>Worst cells analysed weekly</p></div>
+        <div class="stat"><span class="n" data-count="2">0</span><p>Networks reported (TEF &amp; VF)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">02</span><h2>Skills &amp; toolkit</h2></div>
+
+    <div class="tabs reveal" role="tablist" id="tabs">
+      <button class="tab active" data-tab="net" role="tab">Networking</button>
+      <button class="tab" data-tab="ran" role="tab">LTE &amp; 5G</button>
+      <button class="tab" data-tab="auto" role="tab">Automation &amp; Data</button>
+      <button class="tab" data-tab="tools" role="tab">Tools</button>
+    </div>
+
+    <div class="panels reveal d1">
+      <div class="panel active" id="p-net">
+        <div class="skill-card"><h3>Fundamentals</h3><div class="tags"><span>OSI Model</span><span>TCP/IP</span><span>LAN / WAN / MAN</span><span>IPv4 / IPv6</span><span>Subnetting</span><span>MAC Addressing</span><span>Default Gateway</span><span>Ethernet</span></div></div>
+        <div class="skill-card"><h3>Routing &amp; Switching</h3><div class="tags"><span>Static &amp; Dynamic Routing</span><span>OSPF</span><span>BGP</span><span>RIP</span><span>VLAN</span><span>Inter-VLAN</span><span>STP</span><span>ARP / ICMP</span></div></div>
+        <div class="skill-card"><h3>Services &amp; Protocols</h3><div class="tags"><span>DNS</span><span>DHCP</span><span>HTTP / HTTPS</span><span>FTP / SFTP / TFTP</span><span>SSH</span><span>SNMP</span><span>NTP</span><span>TCP / UDP</span><span>SMTP</span></div></div>
+        <div class="skill-card"><h3>Security &amp; Troubleshooting</h3><div class="tags"><span>Firewall</span><span>ACL</span><span>VPN</span><span>NAT / PAT</span><span>Port Security</span><span>Ping / Traceroute</span><span>Packet Analysis</span><span>Latency &amp; Packet Loss</span></div></div>
+      </div>
+      <div class="panel" id="p-ran">
+        <div class="skill-card wide"><h3>Radio Access Network</h3><div class="tags"><span>LTE / 4G</span><span>5G NR</span><span>5G NSA</span><span>EN-DC</span><span>Anchor Cells</span><span>Low-Band 5G</span><span>NR600 Coverage</span><span>Mobility Concepts</span></div></div>
+        <div class="skill-card wide"><h3>Performance &amp; Optimisation</h3><div class="tags"><span>Accessibility &amp; Retainability KPIs</span><span>Throughput Analysis</span><span>Cluster Optimisation</span><span>Drive Test Analysis</span><span>Coverage &amp; Capacity</span><span>Parameter Baseline Validation</span></div></div>
+        <div class="skill-card wide"><h3>Radio KPIs I work with</h3><div class="tags mono"><span>RXLEVUL</span><span>RXLEVDL</span><span>RXQUALUL</span><span>RXQUALDL</span><span>TAVAL</span><span>MRRFIL00</span><span>MRRFIL01</span></div></div>
+      </div>
+      <div class="panel" id="p-auto">
+        <div class="skill-card wide">
+          <h3>Proficiency</h3>
+          <div class="bars">
+            <div class="bar"><label>Python &amp; Pandas</label><div><i style="--w:90%"></i></div></div>
+            <div class="bar"><label>Excel / OpenPyXL automation</label><div><i style="--w:92%"></i></div></div>
+            <div class="bar"><label>Shell scripting &amp; CLI</label><div><i style="--w:80%"></i></div></div>
+            <div class="bar"><label>Network KPI analysis</label><div><i style="--w:88%"></i></div></div>
+            <div class="bar"><label>Change management (ITIL)</label><div><i style="--w:85%"></i></div></div>
+          </div>
+          <p class="note">Self-assessed, for visual guidance.</p>
+        </div>
+        <div class="skill-card wide"><h3>Also</h3><div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>OpenPyXL</span><span>Shell Scripting</span><span>Linux CLI</span><span>Data Processing</span><span>Report Automation</span><span>Power BI (cert.)</span></div></div>
+      </div>
+      <div class="panel" id="p-tools">
+        <div class="skill-card wide"><h3>Platforms</h3><div class="tags"><span>Ericsson ENM</span><span>BMC Helix ITSM</span><span>Cisco Packet Tracer</span><span>Wireshark</span><span>PuTTY</span><span>WinSCP</span><span>VS Code</span><span>Linux Terminal</span><span>Microsoft Excel</span></div></div>
+        <div class="skill-card wide"><h3>Professional skills</h3><div class="tags"><span>Problem Solving</span><span>Analytical Thinking</span><span>Communication</span><span>Teamwork</span><span>Adaptability</span><span>Time Management</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">03</span><h2>Experience</h2></div>
+    <div class="timeline">
+      <article class="job reveal">
+        <div class="marker"></div>
+        <div class="job-card">
+          <header>
+            <div><h3>Network Engineer</h3><p class="company">Ericsson</p></div>
+            <span class="badge">2 yrs 11 mos</span>
+          </header>
+          <ul class="ticks">
+            <li>Performed <b>2G RAN performance monitoring</b> and weekly Mobile Radio Reporting (MRR) across multiple Ericsson Network Manager (ENM) domains.</li>
+            <li>Extracted MRRFIL01 (TEF) and MRRFIL00 (VF) measurement files using <b>Shell scripting &amp; CLI</b> across ENM environments.</li>
+            <li>Built <b>Python automation</b> (Pandas + OpenPyXL) for multi-ENM data processing, consolidation and Excel report generation.</li>
+            <li>Analysed RXLEVUL, RXLEVDL, RXQUALUL, RXQUALDL and Timing Advance to find worst-performing cells at BSC and cell level.</li>
+            <li>Automated weekly MRR summaries and BSC-wise <b>worst-20 cell analysis</b> for TEF and VF reports.</li>
+            <li>Monitored <b>LTE/5G configuration integrity</b> across ENM1–3, finding missing EUtranFreqRelation and co-located 5G configuration data.</li>
+            <li>Managed RAN <b>Change Requests</b> in BMC Helix ITSM — from drafting and documentation to scheduling, pre/post-checks and rollback plans.</li>
+            <li>Coordinated with Radio Network Design, Optimisation and Change Management teams.</li>
+          </ul>
+          <div class="tags small"><span>Ericsson ENM</span><span>BMC Helix ITSM</span><span>2G RAN</span><span>LTE</span><span>5G NR</span><span>Python</span><span>Pandas</span><span>OpenPyXL</span><span>ITIL</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">04</span><h2>Selected projects</h2></div>
+    <div class="cards">
+      <article class="project reveal tilt-card">
+        <div class="p-top"><span class="p-idx">01</span>
+          <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="36" height="32" rx="4"/><path d="M6 18h36M16 40V18M14 30l6-5 5 4 8-8"/></svg></div>
+        <h3>Automated Network Performance Reporting System</h3>
+        <p>Python-based automation that processes and consolidates network measurement data into weekly performance reports, surfacing worst-performing cells.</p>
+        <ul>
+          <li>Automated weekly report generation &amp; Excel data prep</li>
+          <li>Analysed network KPIs to identify worst cells</li>
+          <li>Reduced manual reporting effort</li>
+        </ul>
+        <div class="tags small"><span>Python</span><span>Pandas</span><span>OpenPyXL</span><span>Excel</span></div>
+      </article>
+
+      <article class="project reveal d1 tilt-card">
+        <div class="p-top"><span class="p-idx">02</span>
+          <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l15 6v11c0 9-6 15-15 19C15 38 9 32 9 23V12z"/><path d="M17 24l5 5 9-10"/></svg></div>
+        <h3>Network Data Integrity Monitoring &amp; Reporting</h3>
+        <p>Weekly integrity checks that document missing configuration relationships and 5G co-location data, keeping network records trustworthy.</p>
+        <ul>
+          <li>Weekly data integrity reports</li>
+          <li>Network-wise reports &amp; data validation</li>
+          <li>Configuration gap tracking</li>
+        </ul>
+        <div class="tags small"><span>Network Mgmt Platform</span><span>Excel</span></div>
+      </article>
+
+      <article class="project reveal d2 tilt-card">
+        <div class="p-top"><span class="p-idx">03</span>
+          <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="24" r="5"/><circle cx="36" cy="12" r="5"/><circle cx="36" cy="36" r="5"/><path d="M16.5 22l15-8M16.5 26l15 8"/></svg></div>
+        <h3>Network Change Request Management</h3>
+        <p>End-to-end CRQ record handling — keeping schedules, site info and documentation accurate and aligned with technical teams.</p>
+        <ul>
+          <li>Updated change details &amp; implementation schedules</li>
+          <li>Tracked CRQ status with technical teams</li>
+          <li>Maintained change documentation</li>
+        </ul>
+        <div class="tags small"><span>BMC Helix ITSM</span><span>ITIL</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="learning">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">05</span><h2>Education &amp; certifications</h2></div>
+    <div class="edu-grid">
+      <div class="edu reveal">
+        <h3>Education</h3>
+        <div class="edu-item"><span class="yr">2023</span><div><h4>B.E. (Hons.) — Electronics &amp; Telecommunication Engineering</h4><p>Scored 66%</p></div></div>
+        <div class="edu-item"><span class="yr">2020</span><div><h4>Diploma — Electronics &amp; Telecommunication Engineering</h4><p>Scored 69%</p></div></div>
+      </div>
+      <div class="edu reveal d1">
+        <h3>Certifications</h3>
+        <div class="edu-item"><span class="yr">2025</span><div><h4>Get Started Building with Power BI</h4><p>Microsoft Learn · Apr 2025</p></div></div>
+        <div class="edu-item"><span class="yr">2023</span><div><h4>Create and Manage Projects in Python</h4><p>Microsoft Learn</p></div></div>
+      </div>
+      <div class="edu beyond reveal d2">
+        <h3>Beyond work</h3>
+        <div class="edu-item"><span class="emoji">🏓</span><div><h4>Table Tennis</h4><p>Discipline, focus and teamwork.</p></div></div>
+        <div class="edu-item"><span class="emoji">🧘</span><div><h4>Rajyoga Meditation</h4><p>Mindfulness, concentration, self-discipline.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <p class="eyebrow"><span class="dot"></span> Let's connect</p>
+      <h2>Have a role or project in mind?<br><span class="grad">Let's build something reliable.</span></h2>
+      <div class="cta center">
+        <a class="btn primary magnetic" href="mailto:jayeshmulchandani067@gmail.com"><span>jayeshmulchandani067@gmail.com</span></a>
+        <a class="btn ghost magnetic" href="tel:+919926490716"><span>+91 99264 90716</span></a>
+      </div>
+      <p class="loc">Indore, Madhya Pradesh · Open to relocation</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap"><p>© <span id="yr"></span> Jayesh Mulchandani</p><a href="#home">Back to top ↑</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
